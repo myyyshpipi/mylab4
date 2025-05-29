@@ -1,0 +1,21 @@
+@startuml
+class org.example.controller.Controller {
+- CustomerDAO customerDAO
+- ComponentDAO componentDAO
+- ItemDAO itemDAO
+- PurchaseDAO purchaseDAO
+- SupplyDAO supplyDAO
+- MainView mainView
+- ComponentView componentView
+- ItemView itemView
+- PurchaseView purchaseView
+- CustomerView customerView
+- SupplyView supplyView
+- void confirmAndClearData()
+- void clearDatabase()
+- void refreshAllViews()
++ {static} void main(String[])
+}
+
+
+@enduml

@@ -1,0 +1,323 @@
+@startuml
+class org.example.model.DBConnection {
+- {static} Connection connection
++ {static} Connection getConnection()
++ {static} void closeConnection()
+}
+
+
+class org.example.model.entities.Customer {
+- int id
+- String name
+- String phone
++ <<Create>> Customer(int,String,String)
++ int getId()
++ String getName()
++ String getPhone()
+}
+
+
+class org.example.view.CustomerView {
+- JTable table
+- CustomerTableModel tableModel
+- CustomerDAO customerDAO
++ <<Create>> CustomerView(CustomerDAO)
+- void showAddCustomerDialog()
++ void refresh()
+}
+
+
+class org.example.view.CustomerView$CustomerTableModel {
+- String[] columnNames
+- List<Customer> customers
++ <<Create>> CustomerTableModel(List<Customer>)
++ void updateData(List<Customer>)
++ int getRowCount()
++ int getColumnCount()
++ Object getValueAt(int,int)
++ String getColumnName(int)
+}
+
+
+class org.example.model.DB.ItemDAO {
++ List<Item> getAllItems()
++ void addItem(Item)
++ Item getItemById(int)
++ void updateItemAvailability(int,boolean)
++ void deleteAllItems()
+}
+
+class org.example.model.entities.Supply {
+- int id
+- String supplierName
+- String supplyDate
+- String componentType
+- String material
+- int quantity
++ <<Create>> Supply(int,String,String,String,String,int)
++ int getId()
++ String getSupplierName()
++ String getSupplyDate()
++ String getComponentType()
++ String getMaterial()
++ int getQuantity()
+}
+
+
+class org.example.controller.Controller {
+- CustomerDAO customerDAO
+- ComponentDAO componentDAO
+- ItemDAO itemDAO
+- PurchaseDAO purchaseDAO
+- SupplyDAO supplyDAO
+- MainView mainView
+- ComponentView componentView
+- ItemView itemView
+- PurchaseView purchaseView
+- CustomerView customerView
+- SupplyView supplyView
++ <<Create>> Controller()
+- void confirmAndClearData()
+- void clearDatabase()
+- void refreshAllViews()
++ {static} void main(String[])
+}
+
+
+class org.example.model.entities.Purchase {
+- int id
+- int customerId
+- int itemId
+- String purchaseDate
++ <<Create>> Purchase(int,int,int,String)
++ int getId()
++ int getCustomerId()
++ int getItemId()
++ String getPurchaseDate()
+}
+
+
+class org.example.model.DB.ComponentDAO {
++ List<Component> getAllComponents()
++ void addComponent(Component)
++ Component getComponentById(int)
++ List<Component> getComponentsByType(String)
++ void updateComponentQuantity(int,int)
++ void deleteAllComponents()
+}
+
+class org.example.view.CustomerComboBoxItem {
+- Customer customer
++ <<Create>> CustomerComboBoxItem(Customer)
++ Customer getCustomer()
++ String toString()
+}
+
+
+class org.example.view.ItemView {
+- JTable table
+- ItemTableModel tableModel
+- ItemDAO itemDAO
+- ComponentDAO componentDAO
+- ComponentView componentView
++ <<Create>> ItemView(ItemDAO,ComponentDAO,ComponentView)
+- void showAddItemDialog()
++ void refresh()
+}
+
+
+class org.example.view.ItemView$ItemTableModel {
+- String[] columnNames
+- List<Item> items
+- ComponentDAO componentDAO
++ <<Create>> ItemTableModel(List<Item>,ComponentDAO)
++ void updateData(List<Item>)
++ int getRowCount()
++ int getColumnCount()
++ Object getValueAt(int,int)
+- String getComponentName(int)
++ String getColumnName(int)
+}
+
+
+class org.example.view.PurchaseView {
+- JTable table
+- PurchaseTableModel tableModel
+- PurchaseDAO purchaseDAO
+- CustomerDAO customerDAO
+- ItemDAO itemDAO
+- ItemView itemView
++ <<Create>> PurchaseView(PurchaseDAO,CustomerDAO,ItemDAO,ItemView)
+- void showAddPurchaseDialog()
++ void refresh()
+}
+
+
+class org.example.view.PurchaseView$PurchaseTableModel {
+- String[] columnNames
+- List<Purchase> purchases
+- CustomerDAO customerDAO
+- ItemDAO itemDAO
++ <<Create>> PurchaseTableModel(List<Purchase>,CustomerDAO,ItemDAO)
++ void updateData(List<Purchase>)
++ int getRowCount()
++ int getColumnCount()
++ Object getValueAt(int,int)
+- String getCustomerName(int)
+- String getItemName(int)
++ String getColumnName(int)
+}
+
+
+class org.example.view.ComponentCellRenderer {
++ java.awt.Component getListCellRendererComponent(JList<?>,Object,int,boolean,boolean)
+}
+
+class org.example.model.DB.SupplyDAO {
++ List<Supply> getAllSupplies()
++ void addSupply(Supply)
++ void deleteAllSupplies()
+}
+
+class org.example.model.DB.PurchaseDAO {
++ List<Purchase> getAllPurchases()
++ void addPurchase(Purchase)
++ void deleteAllPurchases()
+}
+
+class org.example.view.ComponentView {
+- JTable table
+- ComponentTableModel tableModel
+- ComponentDAO componentDAO
++ <<Create>> ComponentView(ComponentDAO)
++ void refresh()
+- void showAddComponentDialog()
+}
+
+
+class org.example.view.ComponentView$ComponentTableModel {
+- String[] columnNames
+- List<Component> components
++ <<Create>> ComponentTableModel(List<Component>)
++ void updateData(List<Component>)
++ int getRowCount()
++ int getColumnCount()
++ Object getValueAt(int,int)
++ String getColumnName(int)
+}
+
+
+class org.example.view.ItemComboBoxItem {
+- Item item
++ <<Create>> ItemComboBoxItem(Item)
++ Item getItem()
++ String toString()
+}
+
+
+class org.example.view.MainView {
+- JButton btnCustomers
+- JButton btnItems
+- JButton btnPurchases
+- JButton btnComponents
+- JButton btnSupplies
+- JButton btnClearData
++ <<Create>> MainView()
++ JButton getBtnCustomers()
++ JButton getBtnItems()
++ JButton getBtnPurchases()
++ JButton getBtnComponents()
++ JButton getBtnSupplies()
++ JButton getBtnClearData()
+}
+
+
+class org.example.model.DB.CustomerDAO {
++ List<Customer> getAllCustomers()
++ void addCustomer(Customer)
++ Customer getCustomerById(int)
++ void deleteAllCustomers()
+}
+
+class org.example.Mylab4 {
++ {static} void main(String[])
+}
+
+class org.example.view.SupplyView {
+- JTable table
+- SupplyTableModel tableModel
+- SupplyDAO supplyDAO
+- ComponentView componentView
++ <<Create>> SupplyView(SupplyDAO,ComponentView)
+- void showAddSupplyDialog()
++ void refresh()
+}
+
+
+class org.example.view.SupplyView$SupplyTableModel {
+- String[] columnNames
+- List<Supply> supplies
++ <<Create>> SupplyTableModel(List<Supply>)
++ void updateData(List<Supply>)
++ int getRowCount()
++ int getColumnCount()
++ Object getValueAt(int,int)
++ String getColumnName(int)
+}
+
+
+class org.example.model.entities.Component {
+- int id
+- String componentType
+- String material
+- int quantity
++ <<Create>> Component(int,String,String,int)
++ int getId()
++ String getComponentType()
++ String getMaterial()
++ int getQuantity()
+}
+
+
+class org.example.model.entities.Item {
+- int id
+- String name
+- int caseComponentId
+- int coreComponentId
+- double price
+- boolean available
++ <<Create>> Item(int,String,int,int,double,boolean)
++ int getId()
++ String getName()
++ int getCaseComponentId()
++ int getCoreComponentId()
++ double getPrice()
++ boolean isAvailable()
+}
+
+
+class org.example.view.CustomComboBoxRenderer {
++ Component getListCellRendererComponent(JList<?>,Object,int,boolean,boolean)
+}
+
+
+
+org.example.view.JFrame <|-- org.example.view.CustomerView
+org.example.view.CustomerView +.. org.example.view.CustomerView$CustomerTableModel
+org.example.view.AbstractTableModel <|-- org.example.view.CustomerView$CustomerTableModel
+org.example.view.JFrame <|-- org.example.view.ItemView
+org.example.view.ItemView +.. org.example.view.ItemView$ItemTableModel
+org.example.view.AbstractTableModel <|-- org.example.view.ItemView$ItemTableModel
+org.example.view.JFrame <|-- org.example.view.PurchaseView
+org.example.view.PurchaseView +.. org.example.view.PurchaseView$PurchaseTableModel
+org.example.view.AbstractTableModel <|-- org.example.view.PurchaseView$PurchaseTableModel
+org.example.view.DefaultListCellRenderer <|-- org.example.view.ComponentCellRenderer
+org.example.view.JFrame <|-- org.example.view.ComponentView
+org.example.view.ComponentView +.. org.example.view.ComponentView$ComponentTableModel
+org.example.view.AbstractTableModel <|-- org.example.view.ComponentView$ComponentTableModel
+org.example.view.JFrame <|-- org.example.view.MainView
+org.example.view.JFrame <|-- org.example.view.SupplyView
+org.example.view.SupplyView +.. org.example.view.SupplyView$SupplyTableModel
+org.example.view.AbstractTableModel <|-- org.example.view.SupplyView$SupplyTableModel
+org.example.view.DefaultListCellRenderer <|-- org.example.view.CustomComboBoxRenderer
+@enduml

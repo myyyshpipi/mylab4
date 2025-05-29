@@ -1,0 +1,172 @@
+@startuml
+class org.example.view.CustomerComboBoxItem {
+- Customer customer
++ Customer getCustomer()
++ String toString()
+}
+
+
+class org.example.view.CustomerView {
+- JTable table
+- CustomerTableModel tableModel
+- CustomerDAO customerDAO
+- void showAddCustomerDialog()
++ void refresh()
+}
+
+
+class org.example.view.CustomerView$CustomerTableModel {
+- String[] columnNames
+- List<Customer> customers
++ void updateData(List<Customer>)
++ int getRowCount()
++ int getColumnCount()
++ Object getValueAt(int,int)
++ String getColumnName(int)
+}
+
+
+class org.example.view.ItemView {
+- JTable table
+- ItemTableModel tableModel
+- ItemDAO itemDAO
+- ComponentDAO componentDAO
+- ComponentView componentView
+- void showAddItemDialog()
++ void refresh()
+}
+
+
+class org.example.view.ItemView$ItemTableModel {
+- String[] columnNames
+- List<Item> items
+- ComponentDAO componentDAO
++ void updateData(List<Item>)
++ int getRowCount()
++ int getColumnCount()
++ Object getValueAt(int,int)
+- String getComponentName(int)
++ String getColumnName(int)
+}
+
+
+class org.example.view.PurchaseView {
+- JTable table
+- PurchaseTableModel tableModel
+- PurchaseDAO purchaseDAO
+- CustomerDAO customerDAO
+- ItemDAO itemDAO
+- ItemView itemView
+- void showAddPurchaseDialog()
++ void refresh()
+}
+
+
+class org.example.view.PurchaseView$PurchaseTableModel {
+- String[] columnNames
+- List<Purchase> purchases
+- CustomerDAO customerDAO
+- ItemDAO itemDAO
++ void updateData(List<Purchase>)
++ int getRowCount()
++ int getColumnCount()
++ Object getValueAt(int,int)
+- String getCustomerName(int)
+- String getItemName(int)
++ String getColumnName(int)
+}
+
+
+class org.example.view.ComponentCellRenderer {
++ java.awt.Component getListCellRendererComponent(JList<?>,Object,int,boolean,boolean)
+}
+
+class org.example.view.ComponentView {
+- JTable table
+- ComponentTableModel tableModel
+- ComponentDAO componentDAO
++ void refresh()
+- void showAddComponentDialog()
+}
+
+
+class org.example.view.ComponentView$ComponentTableModel {
+- String[] columnNames
+- List<Component> components
++ void updateData(List<Component>)
++ int getRowCount()
++ int getColumnCount()
++ Object getValueAt(int,int)
++ String getColumnName(int)
+}
+
+
+class org.example.view.ItemComboBoxItem {
+- Item item
++ Item getItem()
++ String toString()
+}
+
+
+class org.example.view.MainView {
+- JButton btnCustomers
+- JButton btnItems
+- JButton btnPurchases
+- JButton btnComponents
+- JButton btnSupplies
+- JButton btnClearData
++ JButton getBtnCustomers()
++ JButton getBtnItems()
++ JButton getBtnPurchases()
++ JButton getBtnComponents()
++ JButton getBtnSupplies()
++ JButton getBtnClearData()
+}
+
+
+class org.example.view.SupplyView {
+- JTable table
+- SupplyTableModel tableModel
+- SupplyDAO supplyDAO
+- ComponentView componentView
+- void showAddSupplyDialog()
++ void refresh()
+}
+
+
+class org.example.view.SupplyView$SupplyTableModel {
+- String[] columnNames
+- List<Supply> supplies
++ void updateData(List<Supply>)
++ int getRowCount()
++ int getColumnCount()
++ Object getValueAt(int,int)
++ String getColumnName(int)
+}
+
+
+class org.example.view.CustomComboBoxRenderer {
++ Component getListCellRendererComponent(JList<?>,Object,int,boolean,boolean)
+}
+
+
+
+org.example.view.JFrame <|-- org.example.view.CustomerView
+org.example.view.CustomerView +.. org.example.view.CustomerView$CustomerTableModel
+org.example.view.AbstractTableModel <|-- org.example.view.CustomerView$CustomerTableModel
+org.example.view.JFrame <|-- org.example.view.ItemView
+org.example.view.ItemView +.. org.example.view.ItemView$ItemTableModel
+org.example.view.AbstractTableModel <|-- org.example.view.ItemView$ItemTableModel
+org.example.view.JFrame <|-- org.example.view.PurchaseView
+org.example.view.PurchaseView +.. org.example.view.PurchaseView$PurchaseTableModel
+org.example.view.AbstractTableModel <|-- org.example.view.PurchaseView$PurchaseTableModel
+org.example.view.DefaultListCellRenderer <|-- org.example.view.ComponentCellRenderer
+org.example.view.JFrame <|-- org.example.view.ComponentView
+org.example.view.ComponentView +.. org.example.view.ComponentView$ComponentTableModel
+org.example.view.AbstractTableModel <|-- org.example.view.ComponentView$ComponentTableModel
+org.example.view.JFrame <|-- org.example.view.MainView
+org.example.view.JFrame <|-- org.example.view.SupplyView
+org.example.view.SupplyView +.. org.example.view.SupplyView$SupplyTableModel
+org.example.view.AbstractTableModel <|-- org.example.view.SupplyView$SupplyTableModel
+org.example.view.DefaultListCellRenderer <|-- org.example.view.CustomComboBoxRenderer
+@enduml

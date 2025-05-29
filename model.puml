@@ -1,0 +1,111 @@
+@startuml
+class org.example.model.DBConnection {
+- {static} Connection connection
++ {static} Connection getConnection()
++ {static} void closeConnection()
+}
+
+
+class org.example.model.entities.Customer {
+- int id
+- String name
+- String phone
++ int getId()
++ String getName()
++ String getPhone()
+}
+
+
+class org.example.model.DB.ItemDAO {
++ List<Item> getAllItems()
++ void addItem(Item)
++ Item getItemById(int)
++ void updateItemAvailability(int,boolean)
++ void deleteAllItems()
+}
+
+class org.example.model.DB.SupplyDAO {
++ List<Supply> getAllSupplies()
++ void addSupply(Supply)
++ void deleteAllSupplies()
+}
+
+class org.example.model.DB.PurchaseDAO {
++ List<Purchase> getAllPurchases()
++ void addPurchase(Purchase)
++ void deleteAllPurchases()
+}
+
+class org.example.model.DB.CustomerDAO {
++ List<Customer> getAllCustomers()
++ void addCustomer(Customer)
++ Customer getCustomerById(int)
++ void deleteAllCustomers()
+}
+
+class org.example.model.entities.Supply {
+- int id
+- String supplierName
+- String supplyDate
+- String componentType
+- String material
+- int quantity
++ int getId()
++ String getSupplierName()
++ String getSupplyDate()
++ String getComponentType()
++ String getMaterial()
++ int getQuantity()
+}
+
+
+class org.example.model.entities.Purchase {
+- int id
+- int customerId
+- int itemId
+- String purchaseDate
++ int getId()
++ int getCustomerId()
++ int getItemId()
++ String getPurchaseDate()
+}
+
+
+class org.example.model.DB.ComponentDAO {
++ List<Component> getAllComponents()
++ void addComponent(Component)
++ Component getComponentById(int)
++ List<Component> getComponentsByType(String)
++ void updateComponentQuantity(int,int)
++ void deleteAllComponents()
+}
+
+class org.example.model.entities.Component {
+- int id
+- String componentType
+- String material
+- int quantity
++ int getId()
++ String getComponentType()
++ String getMaterial()
++ int getQuantity()
+}
+
+
+class org.example.model.entities.Item {
+- int id
+- String name
+- int caseComponentId
+- int coreComponentId
+- double price
+- boolean available
++ int getId()
++ String getName()
++ int getCaseComponentId()
++ int getCoreComponentId()
++ double getPrice()
++ boolean isAvailable()
+}
+
+
+@enduml
