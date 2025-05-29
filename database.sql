@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS Customers (
 
 CREATE TABLE IF NOT EXISTS Components (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    component_type TEXT NOT NULL CHECK (component_type IN ('case', 'core')),
+    component_type TEXT NOT NULL CHECK (component_type IN ('Древесина', 'Сердцевина')),
     material TEXT NOT NULL,
     quantity INTEGER NOT NULL DEFAULT 0,
     UNIQUE (component_type, material)
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS Supplies (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     supplier_name TEXT NOT NULL,
     supply_date DATE NOT NULL,
-    component_type TEXT NOT NULL CHECK (component_type IN ('case', 'core')),
+    component_type TEXT NOT NULL CHECK (component_type IN ('Древесина', 'Сердцевина')),
     material TEXT NOT NULL,
     quantity INTEGER NOT NULL
 );
