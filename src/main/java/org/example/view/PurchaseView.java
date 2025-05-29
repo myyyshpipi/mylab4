@@ -10,6 +10,8 @@ import org.example.model.entities.Purchase;
 import javax.swing.*;
 import javax.swing.table.AbstractTableModel;
 import java.awt.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 public class PurchaseView extends JFrame {
@@ -46,19 +48,19 @@ public class PurchaseView extends JFrame {
         JComboBox<CustomerComboBoxItem> customerComboBox = new JComboBox<>();
         JComboBox<ItemComboBoxItem> itemComboBox = new JComboBox<>();
 
-        // Заполняем список покупателей
+        // Список покупателей
         for (Customer customer : customerDAO.getAllCustomers()) {
             customerComboBox.addItem(new CustomerComboBoxItem(customer));
         }
 
-        // Заполняем список доступных предметов
+        // Список доступных палочек
         for (Item item : itemDAO.getAllItems()) {
             if (item.isAvailable()) {
                 itemComboBox.addItem(new ItemComboBoxItem(item));
             }
         }
 
-        // Устанавливаем кастомный рендерер
+        // Создаем выпадающие списки для покупателей и палочек
         customerComboBox.setRenderer(new CustomComboBoxRenderer());
         itemComboBox.setRenderer(new CustomComboBoxRenderer());
 
@@ -75,7 +77,7 @@ public class PurchaseView extends JFrame {
         Object[] message = {
                 "Покупатель:", customerComboBox,
                 "Предмет:", itemComboBox,
-                "Дата (YYYY-MM-DD):", new JTextField()
+                "Дата (YYYY-MM-DD):", new JTextField( new SimpleDateFormat("yyyy-MM-dd").format(new Date()))
         };
 
         int option = JOptionPane.showConfirmDialog(this, message, "Добавить покупку", JOptionPane.OK_CANCEL_OPTION);
@@ -179,5 +181,10 @@ public class PurchaseView extends JFrame {
         public String getColumnName(int column) {
             return columnNames[column];
         }
+    }
+
+    public void refresh() {
+        tableModel.updateData(purchaseDAO.getAllPurchases());
+        tableModel.fireTableDataChanged();
     }
 }

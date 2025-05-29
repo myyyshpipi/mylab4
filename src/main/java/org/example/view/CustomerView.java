@@ -85,4 +85,9 @@ public class CustomerView extends JFrame {
             return columnNames[column];
         }
     }
+
+    public void refresh() {
+        tableModel.updateData(customerDAO.getAllCustomers());
+        tableModel.fireTableDataChanged();
+    }
 }

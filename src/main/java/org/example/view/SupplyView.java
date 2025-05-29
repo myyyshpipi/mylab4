@@ -6,6 +6,8 @@ import org.example.model.entities.Supply;
 import javax.swing.*;
 import javax.swing.table.AbstractTableModel;
 import java.awt.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 public class SupplyView extends JFrame {
@@ -35,7 +37,8 @@ public class SupplyView extends JFrame {
 
 private void showAddSupplyDialog() {
     JTextField supplierField = new JTextField();
-    JTextField dateField = new JTextField();
+    // Заполняем поле текущей датой
+    JTextField dateField = new JTextField( new SimpleDateFormat("yyyy-MM-dd").format(new Date()) );
     String[] componentTypes = {"Древесина", "Сердцевина"};
     JComboBox<String> typeCombo = new JComboBox<>(componentTypes);
     JTextField materialField = new JTextField();
@@ -123,5 +126,10 @@ private void showAddSupplyDialog() {
         }
 
 
+    }
+
+    public void refresh() {
+        tableModel.updateData(supplyDAO.getAllSupplies());
+        tableModel.fireTableDataChanged();
     }
 }

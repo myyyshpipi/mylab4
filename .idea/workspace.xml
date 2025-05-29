@@ -6,12 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="1a9b4eca-3094-4679-99cc-29b4e41660ee" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database1.db" beforeDir="false" afterPath="$PROJECT_DIR$/database1.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/DB/ComponentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/DB/ComponentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/DB/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/DB/CustomerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/DB/ItemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/DB/ItemDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/DB/PurchaseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/DB/PurchaseDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/DB/SupplyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/DB/SupplyDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/ComponentView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/ComponentView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/CustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/CustomerView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/ItemView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/ItemView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/PurchaseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/PurchaseView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/SupplyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/SupplyView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/DB/ComponentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/DB/ComponentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/DB/CustomerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/DB/CustomerDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/DB/ItemDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/DB/ItemDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/DB/PurchaseDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/DB/PurchaseDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/DB/SupplyDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/DB/SupplyDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/view/PurchaseView$PurchaseTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/view/PurchaseView$PurchaseTableModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/view/PurchaseView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/view/PurchaseView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/view/SupplyView$SupplyTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/view/SupplyView$SupplyTableModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/view/SupplyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/view/SupplyView.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +98,7 @@
       <workItem from="1748306979076" duration="83000" />
       <workItem from="1748527653733" duration="145000" />
       <workItem from="1748533171349" duration="24000" />
-      <workItem from="1748533200513" duration="5406000" />
+      <workItem from="1748533200513" duration="7292000" />
     </task>
     <servers />
   </component>

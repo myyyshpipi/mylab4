@@ -163,4 +163,5 @@ public ItemView(ItemDAO itemDAO, ComponentDAO componentDAO, ComponentView compon
         tableModel.updateData(itemDAO.getAllItems());
         tableModel.fireTableDataChanged();
     }
+
 }

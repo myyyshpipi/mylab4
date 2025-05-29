@@ -46,9 +46,11 @@ public class Controller {
         mainView.getBtnPurchases().addActionListener(e -> purchaseView.setVisible(true));
         mainView.getBtnCustomers().addActionListener(e -> customerView.setVisible(true));
         mainView.getBtnComponents().addActionListener(e -> componentView.setVisible(true));
-        mainView.getBtnClearData().addActionListener(e -> confirmAndClearData());
         mainView.getBtnItems().addActionListener(e -> itemView.setVisible(true));
         mainView.getBtnSupplies().addActionListener(e -> supplyView.setVisible(true));
+
+        // Листнер для кнопки очистки данных
+        mainView.getBtnClearData().addActionListener(e -> confirmAndClearData());
 
         mainView.addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
@@ -65,21 +67,24 @@ public class Controller {
         int confirm = JOptionPane.showConfirmDialog(mainView, "Точно удаляем все данные?", "Подтверждение", JOptionPane.YES_NO_OPTION);
         if (confirm == JOptionPane.YES_OPTION) {
             clearDatabase();
+            refreshAllViews();
         }
     }
 
     private void clearDatabase() {
-        try (java.sql.Statement stmt = DBConnection.getConnection().createStatement()) {
-            stmt.execute("DELETE FROM Purchases");
-            stmt.execute("DELETE FROM Items");
-            stmt.execute("DELETE FROM Supplies");
-            stmt.execute("DELETE FROM Components");
-            stmt.execute("DELETE FROM Customers");
-            JOptionPane.showMessageDialog(mainView, "Бвза данных очищена.");
-        } catch (SQLException e) {
-            e.printStackTrace();
-            JOptionPane.showMessageDialog(mainView, "Ошибка при очистке данных.", "Ошибка", JOptionPane.ERROR_MESSAGE);
-        }
+        purchaseDAO.deleteAllPurchases();
+        itemDAO.deleteAllItems();
+        supplyDAO.deleteAllSupplies();
+        componentDAO.deleteAllComponents();
+        customerDAO.deleteAllCustomers();
+    }
+
+    private void refreshAllViews() {
+        if (customerView != null) customerView.refresh();
+        if (itemView != null) itemView.refresh();
+        if (componentView != null) componentView.refresh();
+        if (purchaseView != null) purchaseView.refresh();
+        if (supplyView != null) supplyView.refresh();
     }
 
     public static void main(String[] args) {

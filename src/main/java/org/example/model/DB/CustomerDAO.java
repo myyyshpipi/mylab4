@@ -7,6 +7,9 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Класс для работы с данными в таблице покупателей - Customers
+ */
 public class CustomerDAO {
     public List<Customer> getAllCustomers() {
         List<Customer> customers = new ArrayList<>();
@@ -53,5 +56,14 @@ public class CustomerDAO {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public void deleteAllCustomers() {
+        String sql = "DELETE FROM Customers";
+        try (Statement s = DBConnection.getConnection().createStatement()) {
+            s.executeUpdate(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

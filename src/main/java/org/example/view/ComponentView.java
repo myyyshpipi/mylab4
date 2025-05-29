@@ -103,4 +103,6 @@ public ComponentView(ComponentDAO componentDAO) {
             return columnNames[column];
         }
     }
+
+
 }

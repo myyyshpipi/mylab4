@@ -7,12 +7,15 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Класс для работы с таблицей базы данных Item, где содержится информация о всех палочках
+ */
 public class ItemDAO {
     public List<Item> getAllItems() {
         List<Item> items = new ArrayList<>();
         String sql = "SELECT * FROM Items";
-        try (Statement stmt = DBConnection.getConnection().createStatement();
-             ResultSet rs = stmt.executeQuery(sql)) {
+        try (Statement s = DBConnection.getConnection().createStatement();
+             ResultSet rs = s.executeQuery(sql)) {
             while (rs.next()) {
                 items.add(new Item(
                         rs.getInt("id"),
@@ -31,13 +34,13 @@ public class ItemDAO {
 
     public void addItem(Item item) {
         String sql = "INSERT INTO Items(name, case_component_id, core_component_id, price, available) VALUES(?, ?, ?, ?, ?)";
-        try (PreparedStatement pstmt = DBConnection.getConnection().prepareStatement(sql)) {
-            pstmt.setString(1, item.getName());
-            pstmt.setInt(2, item.getCaseComponentId());
-            pstmt.setInt(3, item.getCoreComponentId());
-            pstmt.setDouble(4, item.getPrice());
-            pstmt.setBoolean(5, item.isAvailable());
-            pstmt.executeUpdate();
+        try (PreparedStatement ps = DBConnection.getConnection().prepareStatement(sql)) {
+            ps.setString(1, item.getName());
+            ps.setInt(2, item.getCaseComponentId());
+            ps.setInt(3, item.getCoreComponentId());
+            ps.setDouble(4, item.getPrice());
+            ps.setBoolean(5, item.isAvailable());
+            ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -45,9 +48,9 @@ public class ItemDAO {
 
     public Item getItemById(int id) {
         String sql = "SELECT * FROM Items WHERE id = ?";
-        try (PreparedStatement pstmt = DBConnection.getConnection().prepareStatement(sql)) {
-            pstmt.setInt(1, id);
-            ResultSet rs = pstmt.executeQuery();
+        try (PreparedStatement ps = DBConnection.getConnection().prepareStatement(sql)) {
+            ps.setInt(1, id);
+            ResultSet rs = ps.executeQuery();
             if (rs.next()) {
                 return new Item(
                         rs.getInt("id"),
@@ -70,6 +73,15 @@ public class ItemDAO {
             pstmt.setBoolean(1, available);
             pstmt.setInt(2, itemId);
             pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void deleteAllItems() {
+        String sql = "DELETE FROM Items";
+        try (Statement s = DBConnection.getConnection().createStatement()) {
+            s.executeUpdate(sql);
         } catch (SQLException e) {
             e.printStackTrace();
         }
