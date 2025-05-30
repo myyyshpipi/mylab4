@@ -499,7 +499,7 @@
     </routine>
     <schema id="191" parent="1" name="main">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2025-05-29.16:21:09</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-05-30.15:43:02</LastIntrospectionLocalTimestamp>
     </schema>
     <argument id="192" parent="16">
       <ArgumentDirection>R</ArgumentDirection>
@@ -1602,7 +1602,7 @@
       <System>1</System>
     </table>
     <check id="562" parent="555">
-      <Predicate>component_type IN (&apos;case&apos;, &apos;core&apos;)</Predicate>
+      <Predicate>component_type IN (&apos;Древесина&apos;, &apos;Сердцевина&apos;)</Predicate>
     </check>
     <column id="563" parent="555" name="id">
       <AutoIncrement>1</AutoIncrement>
@@ -1748,7 +1748,7 @@ material</ColNames>
       <Primary>1</Primary>
     </key>
     <check id="592" parent="559">
-      <Predicate>component_type IN (&apos;case&apos;, &apos;core&apos;)</Predicate>
+      <Predicate>component_type IN (&apos;Древесина&apos;, &apos;Сердцевина&apos;)</Predicate>
     </check>
     <column id="593" parent="559" name="id">
       <AutoIncrement>1</AutoIncrement>

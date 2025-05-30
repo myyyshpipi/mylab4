@@ -5,28 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a9b4eca-3094-4679-99cc-29b4e41660ee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database1.db" beforeDir="false" afterPath="$PROJECT_DIR$/database1.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/DB/ComponentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/DB/ComponentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/DB/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/DB/CustomerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/DB/ItemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/DB/ItemDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/DB/PurchaseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/DB/PurchaseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/DB/SupplyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/DB/SupplyDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/ComponentView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/ComponentView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/CustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/CustomerView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/ItemView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/ItemView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/PurchaseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/PurchaseView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/SupplyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/view/SupplyView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/DB/ComponentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/DB/ComponentDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/DB/CustomerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/DB/CustomerDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/DB/ItemDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/DB/ItemDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/DB/PurchaseDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/DB/PurchaseDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/DB/SupplyDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/DB/SupplyDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/view/PurchaseView$PurchaseTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/view/PurchaseView$PurchaseTableModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/view/PurchaseView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/view/PurchaseView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/view/SupplyView$SupplyTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/view/SupplyView$SupplyTableModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/view/SupplyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/view/SupplyView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4cd29054-7782-47b3-b27c-0bb8be6e4def.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4cd29054-7782-47b3-b27c-0bb8be6e4def/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4cd29054-7782-47b3-b27c-0bb8be6e4def/storage_v2/_src_/schema/main.uQUzAA.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +17,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -51,38 +32,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "Application.Mylab4.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/alex/Projects/LabWork4/mylab4",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Mylab4.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/alex/Projects/LabWork4/mylab4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
       </set>
     </attachedChunks>
   </component>
@@ -99,6 +80,7 @@
       <workItem from="1748527653733" duration="145000" />
       <workItem from="1748533171349" duration="24000" />
       <workItem from="1748533200513" duration="7292000" />
+      <workItem from="1748619686568" duration="709000" />
     </task>
     <servers />
   </component>
