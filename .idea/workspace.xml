@@ -10,21 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba6aadbc-b535-425a-b64e-b7b6d20d14ac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/70c20a70-20ac-4801-b24c-8eccf0f38a9d.corrupted.20250530-071814.reason.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/70c20a70-20ac-4801-b24c-8eccf0f38a9d.corrupted.20250530-071814.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/70c20a70-20ac-4801-b24c-8eccf0f38a9d/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/70c20a70-20ac-4801-b24c-8eccf0f38a9d/storage_v2/_src_/schema/main.uQUzAA.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b80bcf9d-5a98-4c4e-9a5d-3ed42ae65015.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b80bcf9d-5a98-4c4e-9a5d-3ed42ae65015/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/mylab4_jar/mylab4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/DB/ComponentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/DB/ComponentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/DB/ComponentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/DB/ComponentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database1.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/DBConnection.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +45,18 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15527344&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -110,7 +104,9 @@
       <option name="presentableId" value="Default" />
       <updated>1748983962459</updated>
       <workItem from="1748983963661" duration="603000" />
-      <workItem from="1749195030018" duration="3372000" />
+      <workItem from="1749195030018" duration="6324000" />
+      <workItem from="1749244147723" duration="1338000" />
+      <workItem from="1749249351851" duration="627000" />
     </task>
     <servers />
   </component>

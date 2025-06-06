@@ -13,7 +13,6 @@ public class DBConnection {
     public static Connection getConnection() {
         try {
             if (connection == null || connection.isClosed()) {
-                //connection = DriverManager.getConnection("jdbc:sqlite:database1.db");
                 connection = DriverManager.getConnection("jdbc:sqlite:database.db");
             }
         } catch (SQLException e) {
