@@ -1,7 +1,6 @@
 target/
-<<<<<<< Updated upstream
 out/
-=======
+
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -20,4 +19,4 @@ out/
 
 ### Mac OS ###
 .DS_Store
->>>>>>> Stashed changes
+

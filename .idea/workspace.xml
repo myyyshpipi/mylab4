@@ -9,15 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a9b4eca-3094-4679-99cc-29b4e41660ee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mylab4_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mylab4_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4cd29054-7782-47b3-b27c-0bb8be6e4def.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4cd29054-7782-47b3-b27c-0bb8be6e4def/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4cd29054-7782-47b3-b27c-0bb8be6e4def/storage_v2/_src_/schema/main.uQUzAA.zip" beforeDir="false" />
+    <list default="true" id="ba6aadbc-b535-425a-b64e-b7b6d20d14ac" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/70c20a70-20ac-4801-b24c-8eccf0f38a9d.corrupted.20250530-071814.reason.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/70c20a70-20ac-4801-b24c-8eccf0f38a9d.corrupted.20250530-071814.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/70c20a70-20ac-4801-b24c-8eccf0f38a9d/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/70c20a70-20ac-4801-b24c-8eccf0f38a9d/storage_v2/_src_/schema/main.uQUzAA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b80bcf9d-5a98-4c4e-9a5d-3ed42ae65015.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b80bcf9d-5a98-4c4e-9a5d-3ed42ae65015/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/mylab4_jar/mylab4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/DB/ComponentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/DB/ComponentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/model/DB/ComponentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/model/DB/ComponentDAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,27 +34,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence">{}</component>
-  <component name="KubernetesApiProvider">{
-  &quot;isMigrated&quot;: true
-}</component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
 }</component>
-  <component name="ProjectId" id="2xejhgiFhfauiNrcx0Ngps1J9XT" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="2y0ulKiHCe6sacAc4pnrXXJbryL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
     &quot;Application.Mylab4.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -58,39 +56,61 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
-    ]
   }
 }</component>
+  <component name="RunManager">
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26574.91" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26574.91" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1a9b4eca-3094-4679-99cc-29b4e41660ee" name="Changes" comment="" />
-      <created>1748305554184</created>
+      <changelist id="ba6aadbc-b535-425a-b64e-b7b6d20d14ac" name="Changes" comment="" />
+      <created>1748983962459</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1748305554184</updated>
-      <workItem from="1748305555248" duration="1246000" />
-      <workItem from="1748306979076" duration="83000" />
-      <workItem from="1748527653733" duration="145000" />
-      <workItem from="1748533171349" duration="24000" />
-      <workItem from="1748533200513" duration="7292000" />
-      <workItem from="1748619686568" duration="709000" />
+      <updated>1748983962459</updated>
+      <workItem from="1748983963661" duration="603000" />
+      <workItem from="1749195030018" duration="3372000" />
     </task>
     <servers />
   </component>

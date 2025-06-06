@@ -11,6 +11,7 @@ import java.util.List;
  * Класс для работы с таблицей базы данных Componet, в которой содержатся компоненты для производства палочек
  */
 public class ComponentDAO {
+
     public List<Component> getAllComponents() {
         List<Component> components = new ArrayList<>();
         String sql = "SELECT * FROM Components";
